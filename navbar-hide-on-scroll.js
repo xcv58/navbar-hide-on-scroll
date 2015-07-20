@@ -27,6 +27,7 @@ if (Meteor.isClient) {
       return;
     }
 
+    // hide can be slow, but show should be immediate.
     if (st > lastScrollTop) {
       $('.navbar').fadeOut(500);
     } else {
