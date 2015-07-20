@@ -3,12 +3,85 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  {{> nav}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
+  {{> content}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="content">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div id="content">
+        <p>Writing software is too hard and it takes too long. It's time for a new way to write software — especially application software, the user-facing software we use every day to talk to people and keep track of things.</p>
+        <p>This new way should be radically simple. It should make it possible to build a prototype in a day or two, and a real production app in a few weeks. It should make everyday things easy, even when those everyday things involve hundreds of servers, millions of users, and integration with dozens of other systems. It should be built on collaboration, specialization, and division of labor, and it should be accessible to the maximum number of people.</p>
+        <p>Today, there's a chance to create this new way — to build a new platform for cloud applications that will become as ubiquitous as previous platforms such as Unix, HTTP, and the relational database.</p>
+        <p>It is not a small project. There are many big problems to tackle, such as: How do we transition the web from a "dumb terminal" model that is based on serving HTML, to a client/server model that is based on exchanging data? How do we design software to run in a radically distributed environment, where even everyday database apps are spread over multiple data centers and hundreds of intelligent client devices, and must integrate with other software at dozens of other organizations? How do we prepare for a world where most web APIs will be push-based (realtime), rather than polling-driven? In the face of escalating complexity, how can we simplify software engineering so that more people can do it? How will software developers collaborate and share components in this new world?</p>
+        <p>Meteor is our audacious attempt to solve all of these big problems, at least for a certain large class of everyday applications. We think that success will come from hard work, respect for history and "classically beautiful" engineering patterns, and a philosophy of generally open and collaborative development.</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="nav">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </template>
